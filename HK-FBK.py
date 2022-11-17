@@ -525,16 +525,16 @@ for xd in range(10000):
 
 def uaku():
 	try:
-		ua=open('ua.txt','r').read().splitlines()
+		ua=open('bbnew.txt','r').read().splitlines()
 		for ub in ua:
 			ugen.append(ub)
 	except:
-		a=requests.get('https://github.com/wayle77/main/blob/main/ua.txt').text
-		ua=open('.ua.txt','w')
+		a=requests.get('https://github.com/EC-1709/a/blob/main/bbnew.txt').text
+		ua=open('.bbnew.txt','w')
 		aa=re.findall('line">(.*?)<',str(a))
 		for un in aa:
 			ua.write(un+'\n')
-		ua=open('.ua.txt','r').read().splitlines()
+		ua=open('.bbnew.txt','r').read().splitlines()
 #------------[ INDICATION ]---------------#
 id,id2,loop,ok,cp,akun,oprek,method,lisensiku,taplikasi,tokenku,uid,lisensikuni= [],[],0,0,0,[],[],[],[],[],[],[],[]
 cokbrut=[]
